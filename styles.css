@@ -1,0 +1,515 @@
+
+
+@font-face {
+font-family: NYTKarnak Text;
+src: url(/NYTKarnak-Text.otf);
+}
+
+@font-face {
+  font-family: NYTImperial Regular;
+  src: url(/NYTImperial-Regular.otf);
+}
+
+@font-face {
+  font-family: NYTCheltenham ExtraLight;
+  src: url(/NYTCheltenham-ExtraLight.otf);
+}
+
+
+
+
+#page-wrap{
+width: 960px;
+margin: auto;
+}
+
+
+.testing img {
+   float: left;
+
+}
+.testing h10{
+   float: right;
+   width: 20px;
+}
+
+#paragraph{
+   float:left;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 75%;
+}
+
+
+.filters {
+  margin: 25px 0 40px;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+.filter {
+	width: calc(120% - 15px);
+	height: 35px;
+	margin-bottom: 16px;
+	background-color: #d2dae4;
+	text-align: center;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 4px;
+}
+
+.filter:hover{
+  cursor: pointer;
+}
+
+.filter.checked {
+	background-color: #000;
+	color: #fff;
+}
+.filter_name {
+	overflow: hidden;
+	font-size: 20px;
+	line-height: 35px;
+}
+.filter_checkbox {
+	display: none;
+}
+
+
+/* @media screen and (min-width: 768px) {
+
+	.filters {
+		width: 205px;
+		float: right;
+		margin-top: 0;
+		margin-bottom: 0;
+		display: block;
+	}
+	.filter {
+		background: none;
+		text-align: left;
+		padding: 0;
+		width: auto;
+		margin-bottom: 10px;
+
+	}
+	.filter.checked {
+		background: none;
+		color: inherit;
+	}
+	.filter_name {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.8rem;
+		line-height: 1.6;
+		font-family: 'NYTImperial-Regular', sans-serif;
+
+	}
+	.filter_checkbox {
+		display: block;
+		border: 1px solid #000;
+		margin-right: 9px;
+		float: left;
+		width: 14px; height: 14px;
+		position: relative;
+		top: 4px;
+	}
+	.filter.checked .filter_checkbox {
+		background-color: #000;
+	}
+
+} */
+
+html {
+  background:"https://cloud.githubusercontent.com/assets/13753063/10622584/24887842-774e-11e5-98d9-11ec8120fc7a.jpg"  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h1{
+  color: #595959;
+  font-size:40px;
+  font-family: 'NYTKarnak-Text', sans-serif;
+  font-weight: 5pt;
+
+
+}
+h2{
+  color: #595959;
+  font-size:24px;
+  font-family: 'NYTImperial-Regular', sans-serif;
+
+}
+
+h3{
+  color: #595959;
+  text-align: "justify,right";
+  font-family: 'NYTImperial-Regular', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+
+}
+h4{
+  color: #595959;
+  text-align: "justify,right";
+  font-style: italic;
+  font-family: 'NYTStymie-ExtraBold', sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+}
+
+h5{
+  color: #595959;
+  text-align: "justify,right";
+  font-family: NYTCheltenham-ExtraLight;
+  font-style: italic;
+  font-size: 16px;
+}
+h6{
+  color: #595959;
+  text-align: "justify,right";
+  font-style: italic;
+  font-size: 18px;
+}
+
+h7{
+  color: #595959;
+  text-align: "justify,right";
+  font-family: 'NYTImperial-Regular', sans-serif;
+  font-size: 18px;
+}
+
+.conferencelist, .buttons{
+  width: 50%;
+  float: left;
+  text-align: center
+}
+
+
+.conferencepage {
+  width: : 400px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.filter_checkbox > div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+
+p{
+  color: #595959;
+
+  text-align: "justify,right";
+  font-family: 'NYTImperial-Regular', sans-serif;
+}
+h11{
+  color: #595959;
+  text-align: "justify,right";
+  font-family: 'NYTImperial-Regular', sans-serif;
+  font-size:20px;
+}
+h12{
+  color: #595959;
+  font-size:18px;
+  font-family: 'NYTImperial-Regular', sans-serif;
+}
+
+#aboutme{
+  height: auto;
+  width: 600px;
+  color: #333333;
+}
+#girlswhocode{
+  height: auto;
+  width: 600px;
+  color: #595959;
+}
+#resume{
+   width: 600px;
+   margin: 0px;
+
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 70px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #99a7b2; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 60px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#resumelist ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    background-color: #ffffff;
+
+}
+
+#resumelist li {
+    display: inline;
+    background-color: #ffffff;
+}
+#resumelist{
+  list-style-type: none;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 600px;
+  background-color: #ffffff;
+}
+#resumelist ul li a{
+
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: center;
+  background-color: #ffffff;
+}
+
+#resumelist ul li a:before{
+   list-style-type: none;
+}
+#resumelist ul li a:after{
+   list-style-type: none;
+}
+#resumelist ul li a:visited{
+   list-style-type: none;
+}
+
+#resumelist ul li.active a {
+  color: #595959;
+}
+#resumelist ul li a:hover {
+  color: #99a7b2;
+}
+#resumelist ul li a:hover:before {
+  width: 100%;
+}
+#resumelist.align-center ul {
+  text-align: center;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0px;
+    margin-right: auto;
+    border-style: none;
+    border-width: 1px;
+    color: #a8b4bd;
+}
+
+
+#cssmenu {
+  background: #FFFFFF;
+  width: auto;
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #99a7b2;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #99a7b2;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content:" ";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #99a7b2;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content:" ";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #99a7b2;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #99a7b2;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+
+
+.typewriter h1 {
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  animation:
+    typing 4s steps(40, end),
+    blink-caret .50s step-end 5;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000; }
+}
+
+
+.conferences {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 60px;
+	overflow: hidden; /* Prevent text from wrappping around the right column in desktop */
+}
+.conference, .conference_separator, .brand_type_title {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 28px;
+	letter-spacing: 1px;
+	text-transform: none;
+	font-family: 'TiemposHeadlineWebMedium';
+}
+
+.conference, .conference_separator {
+	color: #000;
+}
+
+.conferences.inactive,
+.conferences.filtered .conference_separator {
+	color: #d0dee8;
+}
+
+.conference-hover {
+	display: none;
+	position: fixed;
+	width: 16rem;
+	height: auto;
+	top: 0;
+	left: 0;
+	margin-left: -0.5rem;
+}
+.conference-hover.active {
+	display: block;
+}

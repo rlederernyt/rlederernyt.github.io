@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<div id = 'page-wrap'>
+  <html lang=''>
+    <center>
+      <head>
+        <title>Conferences</title>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <center>
+          <h1> <br>Diversity and Inclusion</h1>
+        </center>
+      </head>
+      <body>
+        <div id='cssmenu'>
+          <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="ergs.html"><span>Employee Resource Groups</span></a></li>
+            <li><a href="initiatives.html"><span>Initiatives</span></a></li>
+            <li class = 'active'><a href="conferences.html"><span>Conferences</span></a></li>
+            <li class='last'><a href="people.html"><span>People</span></a></li>
+          </ul>
+        </div>
+        <div id = 'aboutme'> </div>
+        <h2></h2>
+        <div>
+          <p><br></p>
+        </div>
+        <br>
+        <h3>
+          <div class = "conferencelist">
+            <a class = "conferences" data-category="design">AIGA<br></a>
+            <a class = "conferences" data-category="news-media">SXSW <br> </a>
+            <a class = "conferences" data-category="news-media">VidCon<br> </a>
+            <a class = "conferences" data-category="news-media">VMworld<br> </a>
+            <a class = "conferences" data-category="news-media">Newsgeist<br></a>
+            <a class = "conferences" data-category="marketing-advertising">She Runs It<br></a>
+            <a class = "conferences" data-category="tech">Grace Hopper<br></a>
+            <a class = "conferences" data-category="tech">Write/Speak/Code<br></a>
+            <a class = "conferences" data-category="tech">Wonder Women Tech<br></a>
+            <a class = "conferences" data-category="tech">Working Mother Media<br>
+            <a class = "conferences" data-category="news-media">Online News Association<br></a>
+            <a class = "conferences" data-category="marketing-advertising">Content Marketing World<br></a>
+            <a class = "conferences" data-category="tech">Lesbians Who Tech Summit<br></a>
+            <a class = "conferences" data-category="journalism">Digital Media Strategies USA<br></a>
+            <a class = "conferences" data-category="journalism">GEN (Global Editor's Network) Summit<br></a>
+            <a class = "conferences" data-category="journalism">Investigative Reporters and Editors (IRE)<br></a>
+            <a class = "conferences" data-category="design">99U - Empowering the Creative Community<br> </a>
+            <a class = "conferences" data-category="journalism">North American Travel Journalist Association<br></a>
+            <a class = "conferences" data-category="tech">AWSM (Association for Women in Sports Media)<br>
+            <a class = "conferences" data-category="journalism"> NABJ (National Association of Black Journalists)<br></a></a>
+            <a class = "conferences" data-category="journalism">AAJA (Asian American Journalists Association) <br></a> 
+            <a class = "conferences" data-category="journalism">NLGJA (Lesbian and Gay Journalists Association) <br></a>
+            <a class = "conferences" data-category="news-media">The Digital Hollywood Experience: Media Summit <br></a>
+            <a class = "conferences" data-category="journalism">NAHJ (National Association of Hispanic Journalists) <br></a>
+        </h3>
+        </div>
+        <div class = "filters js-filters">
+          <h4>
+            <div class="filter" data-category="journalism">
+              <div class="filter_checkbox"></div>
+              <span class="filter_name">Journalism</span>
+            </div>
+            <div class="filter" data-category="marketing-advertising">
+              <div class="filter_checkbox"></div>
+              <span class="filter_name">Marketing/Advertising</span><br>
+            </div>
+            <div class="filter" data-category="news-media">
+              <div class="filter_checkbox"></div>
+              <span class="filter_name">News/Media</span>
+            </div>
+            <div class="filter" data-category="design">
+              <div class="filter_checkbox"></div>
+              <span class="filter_name">Design</span>
+            </div>
+            <div class="filter" data-category="tech">
+              <div class="filter_checkbox"></div>
+              <span class="filter_name">Technology</span>
+            </div>
+          </h4>
+        </div>
+        <script>
+          /*
+          * Filter menu
+          */
+          
+          if (document.querySelector('.js-filters')) {
+            var filters = document.querySelectorAll('.filter');
+            var conferences = document.querySelectorAll('.conferences');
+          
+          
+            for (var i = 0; i < filters.length; i++) {
+              filters[i].addEventListener('click', function() {
+                this.classList.toggle('checked');
+                filterConferences();
+              });
+            }
+          
+            function filterConferences() {
+              // Create filter list
+              var filterList = [];
+              var checked = document.querySelectorAll('.filter.checked');
+              for (var i = 0; i < checked.length; i++) {
+                debugger
+                filterList.push(checked[i].dataset.category);
+              }
+          
+              // Filter conferences
+              for (var i = 0; i < conferences.length; i++) {
+                for (var j = 0; j < filterList.length; j++) {
+                  if (filterList.includes(conferences[i].dataset.category)) {
+                    conferences[i].classList.remove('inactive');
+                  } else {
+                    conferences[i].classList.add('inactive');
+                  }
+                }
+              }
+          
+              if (filterList.length) {
+                document.querySelector('.conferences').classList.add('filtered');
+              } else {
+                document.querySelector('.conferences').classList.remove('filtered');
+                for (var i = 0; i < conferences.length; i++) {
+                  conferences[i].classList.remove('inactive');
+                }
+              }
+            }
+          }
+        </script>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+</div>
+</body>
+</center>
+</html>
+
