@@ -166,7 +166,7 @@ h4{
   color: #000000;
   text-align: "justify,right";
   
-  font-family: 'NYTImperial-Regular', sans-serif;
+  font-family: 'NYTStymie-Light', sans-serif;
   font-weight: 200;
   font-size: 26px;
 }
@@ -183,7 +183,7 @@ h5{
 h6{
   color: #000000;
   font-size:18px;
-  font-family: 'NYTImperial-Regular', sans-serif;
+  font-family: 'NYTStymie-ExtraBold', sans-serif;
 
 }
 
