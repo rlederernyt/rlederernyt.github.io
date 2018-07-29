@@ -165,7 +165,6 @@ h3{
 h4{
   color: #000000;
   text-align: "justify,right";
-  
   font-family: 'NYTStymie-Light', sans-serif;
   font-weight: 200;
   font-size: 26px;
@@ -174,8 +173,8 @@ h4{
 h5{
   color: #000000;
   text-align: "justify,right";
-  font-family: 'NYTImperial-Regular', sans-serif;
-  font-size: 16px;
+  font-family: 'NYTStymie-Light', sans-serif;
+  font-size: 18px;
   font-weight: 550;
 
 }
