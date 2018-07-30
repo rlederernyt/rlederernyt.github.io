@@ -231,21 +231,12 @@ h12{
 }
 
 
-#aboutme{
+#page{
   height: auto;
   width: 600px;
   color: #000000;
 }
-#girlswhocode{
-  height: auto;
-  width: 600px;
-  color: #000000;
-}
-#resume{
-   width: 600px;
-   margin: 0px;
 
-}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
