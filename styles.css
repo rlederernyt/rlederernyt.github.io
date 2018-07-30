@@ -280,9 +280,9 @@ h12{
 }
 #resumelist{
   list-style-type: none;
-  font-family: 'NYTImperial-Regular', sans-serif;
+  font-family: 'NYTFranklin-Medium', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   width: 600px;
   background-color: #ffffff;
 }
@@ -290,7 +290,7 @@ h12{
 
   list-style-type: none;
   text-decoration: none;
-  font-family: 'NYTImperial-Regular', sans-serif;
+  font-family: 'NYTFranklin-Medium', sans-serif;
   font-weight: 700;
   font-size: 14px;
   position: center;
@@ -373,7 +373,7 @@ hr {
   font-family: 'NYTStymie-ExtraBold', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
@@ -464,7 +464,7 @@ hr {
   letter-spacing: 0em; /* Adjust as needed */
   animation:
     typing 4s steps(40, end),
-    blink-caret .50s step-end 5;
+    blink-caret .50s step-end 4;
 }
 
 /* The typing effect */
