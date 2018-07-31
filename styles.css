@@ -1,17 +1,25 @@
-
-
 @font-face {
-font-family: NYTKarnak Text;
-src: url(/NYTKarnak-Text.otf);
+  font-family: NYTKarnak-Text;
+  src: url(/NYTKarnak-Text.otf);
 }
 
 @font-face {
-  font-family: NYTImperial Regular;
+  font-family: NYTImperial-Regular;
   src: url(/NYTImperial-Regular.otf);
 }
 
 @font-face {
-  font-family: NYTCheltenham ExtraLight;
+  font-family: NYTStymie-Light;
+  src: url(/NYTStymie-Light.otf);
+}
+
+@font-face {
+  font-family: NYTStymie-ExtraBold;
+  src: url(/NYTStymie-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: NYTCheltenham-ExtraLight;
   src: url(/NYTCheltenham-ExtraLight.otf);
 }
 
@@ -84,51 +92,6 @@ margin: auto;
 .filter_checkbox {
 	display: none;
 }
-
-
-/* @media screen and (min-width: 768px) {
-
-	.filters {
-		width: 205px;
-		float: right;
-		margin-top: 0;
-		margin-bottom: 0;
-		display: block;
-	}
-	.filter {
-		background: none;
-		text-align: left;
-		padding: 0;
-		width: auto;
-		margin-bottom: 10px;
-
-	}
-	.filter.checked {
-		background: none;
-		color: inherit;
-	}
-	.filter_name {
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-size: 0.8rem;
-		line-height: 1.6;
-		font-family: 'NYTImperial-Regular', sans-serif;
-
-	}
-	.filter_checkbox {
-		display: block;
-		border: 1px solid #000;
-		margin-right: 9px;
-		float: left;
-		width: 14px; height: 14px;
-		position: relative;
-		top: 4px;
-	}
-	.filter.checked .filter_checkbox {
-		background-color: #000;
-	}
-
-} */
 
 html {
   background:"https://cloud.githubusercontent.com/assets/13753063/10622584/24887842-774e-11e5-98d9-11ec8120fc7a.jpg"  no-repeat center center fixed;
@@ -654,7 +617,6 @@ hr {
     border-color: tranparent;
   }
 }
-
 
 .conferences {
 	padding-left: 15px;
