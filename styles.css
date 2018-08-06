@@ -24,8 +24,6 @@
 }
 
 
-
-
 #page-wrap{
 width: 960px;
 margin: auto;
@@ -175,6 +173,26 @@ h7{
   display: inline-block;
 }
 
+a.conferences:link
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.conferences:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.conferences:hover
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.conferences:active
+{
+   color: #000000;
+   text-decoration: none;
+}
 
 p{
   color: #000000;
