@@ -169,6 +169,10 @@ h7{
   padding: 0;
   margin: 0 auto;
 }
+.conferences {
+  color: #000000
+  text-decoration: none;
+}
 
 .filter_checkbox > div {
   vertical-align: top;
