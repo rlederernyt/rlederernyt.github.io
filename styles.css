@@ -114,6 +114,7 @@ h2{
   color: #000000;
   font-size:24px;
   font-family: 'NYTImperial-Regular', sans-serif;
+  font-weight: 550;
 
 }
 
@@ -121,7 +122,7 @@ h3{
   color: #000000;
   text-align: "justify,right";
   font-family: 'NYTImperial-Regular', sans-serif;
-  font-weight: 550;
+  font-weight: 200;
   font-size: 18px;
 
 }
@@ -130,7 +131,7 @@ h4{
   text-align: "justify,right";
   font-family: 'NYTStymie-Light', sans-serif;
   font-weight: 200;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 h5{
@@ -234,7 +235,7 @@ h12{
 }
 #resumelist{
   list-style-type: none;
-  font-family: 'NYTFranklin-Medium', sans-serif;
+  font-family: 'NYTImperial-Regular', sans-serif;
   font-weight: 700;
   font-size: 18px;
   width: 600px;
@@ -244,7 +245,7 @@ h12{
 
   list-style-type: none;
   text-decoration: none;
-  font-family: 'NYTFranklin-Medium', sans-serif;
+  font-family: 'NYTImperial-Regular', sans-serif;
   font-weight: 700;
   font-size: 14px;
   position: center;
@@ -324,7 +325,7 @@ hr {
   text-decoration: none;
   display: block;
   padding: 15px 25px;
-  font-family: 'NYTStymie-ExtraBold', sans-serif;
+  font-family: 'NYTKarnak-Text', serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -682,3 +683,24 @@ hr {
     right: 900px;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #000;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+  font-style: italic;
+  font-family: NYTImperial-Regular, sans-serif;
+  text-align: right;
+}
+blockquote:before {
+  color: #000;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
