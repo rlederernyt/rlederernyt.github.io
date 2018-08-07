@@ -704,3 +704,7 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+a:link {
+   color:inherit;
+}
