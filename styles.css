@@ -194,6 +194,11 @@ h7{
    text-decoration: none;
 }
 
+.conferences:hover {
+  font-weight: bold;
+}
+
+
 p{
   color: #000000;
   font-weight: 550;
