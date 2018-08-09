@@ -1,26 +1,26 @@
 @font-face {
   font-family: NYTKarnak-Text;
-  src: url(/NYTKarnak-Text.otf);
+  src: url(/NYTKarnakText.otf);
 }
 
 @font-face {
   font-family: NYTImperial-Regular;
-  src: url(/NYTImperial-Regular.otf);
+  src: url(/NYTImperialRegular.otf);
 }
 
 @font-face {
   font-family: NYTStymie-Light;
-  src: url(/NYTStymie-Light.otf);
+  src: url(/NYTStymieLight.otf);
 }
 
 @font-face {
   font-family: NYTStymie-ExtraBold;
-  src: url(/NYTStymie-ExtraBold.otf);
+  src: url(/NYTStymieExtraBold.otf);
 }
 
 @font-face {
   font-family: NYTCheltenham-ExtraLight;
-  src: url(/NYTCheltenham-ExtraLight.otf);
+  src: url(/NYTCheltenhamExtraLight.otf);
 }
 
 
