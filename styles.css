@@ -243,7 +243,7 @@ h12{
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
-#resumelist ul {
+#subheader ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -252,11 +252,11 @@ h12{
 
 }
 
-#resumelist li {
+#subheader li {
     display: inline;
     background-color: #ffffff;
 }
-#resumelist{
+#subheader{
   list-style-type: none;
   font-family: 'NYTImperial-Regular', sans-serif;
   font-weight: 700;
@@ -264,7 +264,7 @@ h12{
   width: 600px;
   background-color: #ffffff;
 }
-#resumelist ul li a{
+#subheader ul li a{
 
   list-style-type: none;
   text-decoration: none;
@@ -275,28 +275,33 @@ h12{
   background-color: #ffffff;
 }
 
-#resumelist ul li a:before{
+#subheader ul li a:before{
    list-style-type: none;
 }
-#resumelist ul li a:after{
+#subheader ul li a:after{
    list-style-type: none;
 }
-#resumelist ul li a:visited{
+#subheader ul li a:visited{
    list-style-type: none;
 }
 
-#resumelist ul li.active a {
+#subheader ul li.active a {
   color: #000000;
 }
-#resumelist ul li a:hover {
+#subheader ul li a:hover {
   color: #000000;
 }
-#resumelist ul li a:hover:before {
+#subheader ul li a:hover:before {
   width: 100%;
 }
-#resumelist.align-center ul {
+#subheader.align-center ul {
   text-align: center;
 }
+
+.subheader:hover {
+  font-weight: bold;
+}
+
 
 hr {
     display: block;
